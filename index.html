@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Oswald:wght@400&family=Roboto:wght@300&display=swap">
+
+</head>
+
+<body>
+    <header>
+        <h1>Tillgänglighet</h1>
+    </header>
+    <div class="container">
+        <aside>
+            <nav class="nav">
+                <a href="#byter">Definition</a>
+                <a href="#web">Deskrivning på web</a>
+                <a href="#design">Om design</a>
+                <a href="#kode">Om koder</a>
+            </nav>
+        </aside>
+        <main>
+            <section>
+                <h3 id="byter">vad betyder tillgänglighet</h3>
+                <p>Tillgänglighet handlar om hur samhället utformas. Ett tillgängligt samhälle är utformat så att så
+                    många
+                    som
+                    möjligt kan använda och ta del av det.
+
+                    Det handlar om att kunna ta del av den fysiska miljön och kunna ta sig runt i samhället. Det innebär
+                    också
+                    att få tillgång till information och kommunikation samt att kunna använda produkter och tjänster.
+                </p>
+            </section>
+            <section>
+                <h3 id="web">vad innebär tillgänglighet på webben </h3>
+                <p>Tillgänglighet betyder att alla människor inklusive personer med funktionshinder kan använda webben.
+                    Utförligare kan man säga att tillgänglighet innebär att människor med funktionshinder kan uppfatta,
+                    förstå,
+                    navigera, interagera med, och bidra med information till webben. Tillgänglighet gynnar även andra,
+                    till
+                    exempel äldre med svårigheter på grund av åldrande.</p>
+            </section>
+            <section>
+                <h3>När människors användning och medvetenhet om webben växer, blir tillgänglighet (eller "universell
+                    design") mer avgörande. Tillgänglighet bestäms inte bara av en webbplatss kod utan av dess design
+                    och
+                    innehåll</h3>
+                <h3 id="design">Att göra tillgänglig design på en webbplats</h3>
+                <h4>1."Standard" textinnehållsstruktur</h4>
+                <p>Välj lämpliga teckenstorlekar, radhöjder, bokstavsavstånd etc. för att göra text logisk, läsbar och
+                    bekväm att läsa.</p>
+                <h4>2.Färgkontrast</h4>
+                <p>
+                    <img src="images/way18.gif" alt="picture">
+                </p>
+                <p>Relaterat till den sista punkten, ge din design tillräcklig färgkontrast, vilket kommer att hjälpa
+                    synskadade och färgblinda användare. WCAG 2.0 Level AAA kräver ett minsta kontrastförhållande på 7
+                    till 1.</p>
+                <h4>3.Använd mer än färg för att förmedla mening</h4>
+                <p>
+                    <img src="images/way19.gif" alt="picture">
+                </p>
+                <p>Många människor har någon form av synnedsättning, till exempel färgblindhet. Så man kan inte använda
+                    färg ensam för att kommunicera mening.</p>
+                <h4>4.Tillhandahålla transkriptioner</h4>
+                <p>Ge allt ljud ett textkompanjemang för att hjälpa användare som är döva eller hörselskada.</p>
+                <h4>5.Lägg till bildtexter</h4>
+                <p>Man bör tillhandahålla tidsinställd bildtext på video- och multimediainnehål</p>
+                <h3 id="kode">vad kan man som frontend-utvecklare tänka på för att skapa tillgänglig koder.</h3>
+                <h4>1.Konsekvent layout och struktur</h4>
+                <p>För att hjälpa användare att navigera snabbt och enkelt på din webbplats bör du tillhandahålla en
+                    konsekvent layout och struktur. Sidans huvudelement – banner, navigering, sidofält – ska visas på
+                    samma
+                    platser på hela webbplatsen. De bör också markeras konsekvent, till exempel med samma
+                    rubrikstruktur.
+                    Detta kommer också att gynna de med kognitiva funktionsnedsättningar och de som använder en
+                    skärmläsarapplikation </p>
+                <h4>2.Lägg till alternativ text till bilder</h4>
+                <p>Ett bildelements alt-attribut ger en textbeskrivning av bilden. När bilden inte kan ses – vilket
+                    skulle
+                    vara fallet med blinda användare, sökmotorer, blockerade bilder och trasiga länkar – så nås bildens
+                    "innehåll" via dess alt-text.</p>
+                <h4>3. använda semantiska HTML-taggar.</h4>
+                <p>Wrong: &lt;span style="font-size:2em" &gt;&lt;b &gt;My Page Title &lt;/b &gt;&lt;/span &gt;</p>
+                <p> Right: &lt;h1 &gt;My Page Title&lt;h1 &gt; </p>
+                <h4>4.Gör alla länkar tillgängliga för tangentbordet</h4>
+                <img src="images/keyboard.png" alt="keyboardspicture">
+                <p>Många människor använder inte en mus. Vissa hjälpmedelstekniker förlitar sig på tangentbordsinmatning
+                    eller ett virtuellt tangentbord snarare än en mus eller pekdon. Av denna anledning bör länkar inte
+                    kräva
+                    en mus för att nås. Håll dig till standarden ett element med ett href-attribut.</p>
+                <h4>5.Använd listelement för listor</h4>
+                <p>Låter så enkelt, men listor är så ofta inte rätt uppmärkta. Oordnade, ordnade och definitionslistor
+                    är
+                    utmärkta för att markera all slags information. Oordnade listor (
+                    &lt;ul&gt;) är bra för vanliga punktlistor och navigeringslänkar. Ordnade listor (&lt;ol&gt;) är i
+                    princip numrerade
+                    listor, som används för att visa till exempel steg i en process. När du kodar en oordnad lista, lägg
+                    inte punktbilder i linje med innehållet. Använd istället en korrekt uppmärkt lista och stil sedan
+                    med CSS</p>
+            </section>
+
+        </main>
+    </div>
+    <footer>
+        <p>Om du är intresserad, läs mer om tillgänglighet:</p>
+        <ul>
+            <li><a href="https://webbriktlinjer.se/wcag/" target="_blank">Tillgänglighetsriktlinjer</a></li>
+            <li><a href="https://www.w3.org/standards/webdesign/accessibility" target="_blank"> Introduction
+                    to Web Accessibility
+                </a></li>
+            <li><a href="https://developer.mozilla.org/en-US/docs/Web/Accessibility" target="_blank">Accessibility</a>
+            </li>
+        </ul>
+    </footer>
+</body>
+
+</html>
